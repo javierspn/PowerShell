@@ -1,0 +1,1 @@
+﻿Get-VM | Get-HardDisk -DiskType "RawPhysical","RawVirtual" | Select Parent,Name,DiskType,ScsiCanonicalName,DeviceName | Export-Csv -Path C:\temp\yoigorawmapping.csv -Append -NoTypeInformation
