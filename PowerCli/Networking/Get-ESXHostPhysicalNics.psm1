@@ -1,4 +1,4 @@
-Function Get-ESXHostPhysicalNics {
+Function Get-ESXPhysicalNics {
        param (
                 [Parameter(Mandatory = $False)][System.String]$FilePath="c:\temp",
                 [Parameter(Mandatory = $False)][System.String]$FileName="esxi_nics_export.csv"
