@@ -1,4 +1,27 @@
-﻿Function Get-ClusterReport
+﻿<#
+.SYNOPSIS
+#
+
+.DESCRIPTION
+Long description
+
+.PARAMETER ESXCluster
+Parameter description
+
+.PARAMETER FilePath
+Parameter description
+
+.PARAMETER FileName
+Parameter description
+
+.EXAMPLE
+An example
+
+.NOTES
+General notes
+#>
+
+Function Get-ClusterReport
 
 {
     param (
