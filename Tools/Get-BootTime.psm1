@@ -3,7 +3,7 @@
     Get-BootTime
 .SYNOPSIS
     Gets the bootup time for all AD Computers.
-    Generates a file with servers' names and last bootup time and a file for servers that do not reply to a test-Connection test.
+    Generates a file with servers' names and last bootup time and a file for servers that do not reply to a Test-Connection test.
 
 #>
 function Get-BootTime {
@@ -38,7 +38,6 @@ function Get-BootTime {
              
     }
 
-
     foreach ($Sup in $SrvUp) {
         #Write-Host "$Sup+yeah"
         $SrvBoot = Invoke-Command -ComputerName $Sup -ScriptBlock {Get-CimInstance -ClassName win32_operatingsystem} |  Select-Object csname, lastbootuptime
@@ -50,7 +49,5 @@ function Get-BootTime {
 
     Write-Host "Offline or non-WinRM enabled servers report stored on $DownCFullname" -ForegroundColor Red
     Write-Host "Online or servers report stored on $DownCFullname" -ForegroundColor Green
-
-
 
 }
