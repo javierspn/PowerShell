@@ -1,3 +1,4 @@
+Import-Module "C:\Users\fjsantiago.SOPRA\Google Drive\Ps\Misc\Get-Greeting.psm1"
 $TitleDate = get-date
 
 # Elevated session
@@ -11,6 +12,8 @@ if (Test-Administrator) { $Elevated = "Elevated" }
 
 Set-Location $Env:SystemDrive\temp
 Clear-Host
+Get-Greeting -Location "C:\Users\fjsantiago.SOPRA\Google Drive\Ps\Misc"
+
 
 $MajorV = $PSVersionTable | Select-Object -ExpandProperty values | Select-Object major -First 1
 $MinorV = $PSVersionTable | Select-Object -ExpandProperty values | Select-Object minor -First 1
