@@ -52,6 +52,7 @@ $ADGroups = Get-ADGroup -Filter { name -like "*a21-t1-app020*" }
 
 foreach ($ADGrp in $ADGroups) {
     Remove-ADGroup -Identity $ADGrp.Name -Confirm:$false
+    
 }
 
 
