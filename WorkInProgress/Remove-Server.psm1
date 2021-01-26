@@ -10,7 +10,7 @@
 .OUTPUTS
   Not for the moment
 .NOTES
-For DNS: https://community.spiceworks.com/topic/2131661-searching-for-a-records-across-all-zones
+For DNS: https://community.spiceworks.com/topic/2131661-searching-for-a-records-across-all-zones blablah
 
 #>
 function Remove-Server {
