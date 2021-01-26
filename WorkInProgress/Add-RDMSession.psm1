@@ -50,3 +50,4 @@ if ($Domain) {Set-RDMSessionDomain -ID $RDMSession.ID -Domain $Domain}
 
 
 }
+
